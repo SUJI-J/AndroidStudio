@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         final GridView gv = (GridView) findViewById(R.id.gridView1);
         MyGridAdapter gAdapter = new MyGridAdapter(this);
         gv.setAdapter(gAdapter);
-
     }
 
     public class MyGridAdapter extends BaseAdapter {
@@ -56,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.png_1, R.drawable.png_2, R.drawable.png_3,
                 R.drawable.png_4, R.drawable.png_5, R.drawable.png_6, R.drawable.png_7,
                 R.drawable.png_8, R.drawable.png_9, R.drawable.png_10,};
-
+        String[] Name = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
         public View getView(int position, View convertView, ViewGroup parent){
             ImageView imageview = new ImageView(context);
             imageview.setLayoutParams(new GridView.LayoutParams(200, 300));
